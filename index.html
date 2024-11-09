@@ -40,39 +40,49 @@
 
 </head>
 
-<body class="p-8">
-
-<header class="min-h-screen">
+<body>
+ <!-- Header -->
+<header class="min-h-screen flex flex-col p-8">
+   <!-- Nav Bar -->
   <nav class="flex justify-between pb-2 border-black border-b-2">
-    <div class="font-extrabold text-3xl">Name of Company</div>
+    <div class="uppercase text-lg">Name of Company</div>
     <div class="content-center">
-      <a href="#" class="p-2">Link 1</a>
-      <a href="#" class="p-2">Link 2</a>
-      <a href="#" class="p-2">Link 3</a>
-      <a href="#" class="p-2">Link 4</a>
+      <a href="#" class="p-2 uppercase text-sm">Link 1</a>
+      <a href="#" class="p-2 uppercase text-sm">Link 2</a>
+      <a href="#" class="p-2 uppercase text-sm">Link 3</a>
+      <a href="#" class="p-2 uppercase text-sm">Link 4</a>
     </div>
   </nav>
+   <!-- Heading -->
   <h1 class="py-8 font-sans font-extrabold uppercase text-5xl">This is a <br> fun heading</h1>
-  <img src="https://images.unsplash.com/photo-1511860810434-a92f84c6f01e?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-  <div class="grid grid-cols-6">
+   <!-- Image -->
+  <div class="grow relative">
+    <img class="absolute w-full h-full object-cover" src="https://images.unsplash.com/photo-1511860810434-a92f84c6f01e?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+  </div>
+   <!-- Facts Section -->
+  <div class="grid grid-cols-6 pt-8">
     <div class="col-span-1">
-      <p>Fact: <span>900</span></p>
+      <p class="uppercase font-bold text-xs">Fact: <br><span class="text-4xl">900</span></p>
     </div>
     <div class="col-span-1">
-      <p>Fact: <span>Y2K</span></p>
+      <p class="uppercase font-bold text-xs">Fact: <br><span class="text-4xl">Y2K</span></p>
     </div>
     <div class="col-span-1">
-      <p>Fact: <span>420K</span></p>
+      <p class="uppercase font-bold text-xs">Fact: <br><span class="text-4xl">420K</span></p>
     </div>
     <div class="col-span-3">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis error sunt aliquam cumque architecto molestiae omnis voluptatem perferendis, amet vero voluptas maiores repellendus modi magnam excepturi facere ratione est? Tenetur!</p>
+      <p class="text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis error sunt aliquam cumque architecto molestiae omnis voluptatem perferendis, amet vero voluptas maiores repellendus modi magnam excepturi facere ratione est? Tenetur!</p>
     </div>
   </div>
 </header>
 
-<section>
-  <h2><span>Another</span><br> sick heading for attention</h2>
-  <p class="max-w-screen-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati atque incidunt magni, repellendus eum doloribus repellat eos, natus quae quisquam, alias quos voluptas magnam ab. Fuga facere nostrum ipsum.</p>
+<!-- Centered Text & Paragraph -->
+<section class="p-8 text-center">
+  <div class="max-w-xl m-auto">
+    <h2 class="text-3xl pb-6"><span class="uppercase font-bold text-4xl">Another</span><br> sick heading for attention</h2>
+    <p class="pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime obcaecati atque incidunt magni, repellendus eum doloribus repellat eos, natus quae quisquam, alias quos voluptas magnam ab. Fuga facere nostrum ipsum.</p>
+  </div>
+  <!-- Image Grid Section -->
   <div class="grid grid-cols-3 gap-1">
     <img src="https://images.unsplash.com/photo-1547234935-80c7145ec969?q=80&w=2348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
     <img src="https://images.unsplash.com/photo-1547234935-80c7145ec969?q=80&w=2348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
@@ -84,7 +94,8 @@
   <button class="bg-slate-950 text-white p-2">contact us</button>
 </section>
 
-<section>
+ <!-- Text Left / Image Right -->
+<section class="p-8">
   <h2>This is a <br> fun heading</h2>
   <div class="grid grid-cols-2">
     <div class="col-span-1">
@@ -97,17 +108,20 @@
   </div>
 </section>
 
-<section>
+ <!-- Bold Text Section -->
+<section class="p-8">
   <p class="font-extrabold">Lorem ipsum dolor sitad magnam quia delectus dolorem at, fugit nesciunt soluta eaque.</p>
 </section>
 
+ <!-- Gallery Section -->
 <section>
-  <div>
+  <div class="p-8">
     <h2>Gallery</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro inventore laudantium facilis illo voluptates nihil ad vel sapiente iusto magnam! Pariatur odit maxime suscipit totam quas, ipsam laudantium consequatur maiores!</p>
     <p>Consectetur adipisicing elit. Porro inventore laudantium facilis illo voluptates nihil ad vel sapiente iusto magnam! Pariatur odit maxime suscipit totam quas, ipsam laudantium consequatur maiores! Porro inventore laudantium facilis illo voluptates nihil ad vel sapiente iusto magnam! Pariatur odit maxime suscipit totam quas, ipsam laudantium consequatur.</p>
     <button class="bg-slate-950 text-white p-2">gallery</button>
   </div>
+   <!-- Gallery Images Section -->
   <div class="flex overflow-x-auto gap-2">
     <img class="w-1/3" src="https://images.unsplash.com/photo-1547234935-80c7145ec969?q=80&w=2348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
     <img class="w-1/3" src="https://images.unsplash.com/photo-1547234935-80c7145ec969?q=80&w=2348&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
@@ -118,7 +132,8 @@
   </div>
 </section>
 
-<section>
+ <!-- Contact Us Section -->
+<section class="p-8">
   <h3>Contact us.</h3>
   <div class="grid grid-cols-2">
     <form class="flex flex-col col-span-1">
@@ -137,7 +152,8 @@
   </div>
 </section>
 
-<footer class="flex">
+ <!-- Footer -->
+<footer class="flex p-8">
   <div>
     <div class="">
       <p class="font-bold">Group name</p>
@@ -161,9 +177,6 @@
     <button type="submit" class="bg-slate-950 text-white p-2"> Subscribe </button>
   </form>
 </footer>
-
-
-
 
 </body>
 
