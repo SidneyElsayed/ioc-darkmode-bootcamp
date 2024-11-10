@@ -100,7 +100,7 @@
 <section class="p-8 px-8 sm:px-16">
   <!-- Big Heading -->
   <h2 class="py-8 font-sans font-extrabold uppercase text-5xl">This is a <br> fun heading</h2>
-  <div class="grid grid-cols-2">
+  <div class="grid md:grid-cols-2 gap-6">
     <!-- Secondary Heading -->
     <div class="col-span-1 pr-12">
       <div>
@@ -113,8 +113,9 @@
         <button class="bg-slate-950 text-white uppercase text-xs px-6 p-2">learn more</button>
       </div>
     </div>
-    <div class="grow relative">
-      <img class="col-span-1 absolute w-full h-full object-cover" src="https://images.unsplash.com/photo-1488675577037-0d517feb0b09?q=80&w=2185&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <!-- md:h-full on the div negates the h-72, h-full on the image is still needed because of the position absolute -->
+    <div class="grow relative order-first h-72 md:order-none md:h-full"> 
+      <img class="absolute w-full h-full object-cover" src="https://images.unsplash.com/photo-1488675577037-0d517feb0b09?q=80&w=2185&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
     </div>
   </div>
 </section>
@@ -129,8 +130,8 @@
   <div class="p-8 px-8 sm:px-16 relative">
     <div class="p-8">
       <!-- pr (padding right) because we've flipped the direction, so this adds back the padding from the positiohn absolute -->
-      <h2 class="pr-16 [writing-mode:vertical-rl] rotate-180 absolute left-0 font-sans font-extrabold uppercase text-5xl">Gallery</h2>
-      <div class="ml-20">
+      <h2 class="pr-16 pb-6 sm:pb-0 sm:[writing-mode:vertical-rl] sm:rotate-180 sm:absolute sm:left-0 font-sans font-extrabold uppercase text-5xl">Gallery</h2>
+      <div class="sm:ml-20">
         <p class="text-sm pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro inventore laudantium facilis illo voluptates nihil ad vel sapiente iusto magnam! Pariatur odit maxime suscipit totam quas, ipsam laudantium consequatur maiores!</p>
         <p class="text-sm pb-3">Consectetur adipisicing elit. Porro inventore laudantium facilis illo voluptates nihil ad vel sapiente iusto magnam! Pariatur odit maxime suscipit totam quas, ipsam laudantium consequatur maiores! Porro inventore laudantium facilis illo voluptates nihil ad vel sapiente iusto magnam! Pariatur odit maxime suscipit totam quas, ipsam laudantium consequatur.</p>
         <div class="pt-8">
@@ -153,8 +154,8 @@
  <!-- Contact Us Section -->
 <section class="p-8 px-8 sm:px-16">
   <h3 class="py-8 font-sans font-extrabold uppercase text-5xl">Contact us.</h3>
-  <div class="grid grid-cols-2">
-    <form class="flex flex-col col-span-1 pr-12 pb-24">
+  <div class="grid md:grid-cols-2 gap-6">
+    <form class="flex flex-col col-span-1 pr-12 md:pb-24">
       <!-- Name -->
       <div class="pb-6">
         <label class="uppercase font-bold border-black border-b-2 block" for="_name"> Name </label>
@@ -175,15 +176,15 @@
         <button type="submit" class="bg-slate-950 text-white uppercase text-xs px-6 p-2"> Submit </button>
       </div>
     </form>
-    <div class="grow relative">
-      <img class="col-span-1 absolute w-full h-full object-cover" src="https://images.unsplash.com/photo-1524293568345-75d62c3664f7?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <div class="grow relative order-first h-72 md:order-none md:h-full">
+      <img class="col-span-1 absolute w-full h-full object-cover " src="https://images.unsplash.com/photo-1524293568345-75d62c3664f7?q=80&w=2022&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
     </div>
   </div>
 </section>
 
  <!-- Footer -->
 <footer class="p-8 px-8 sm:px-16 uppercase">
-  <div class="border-black pt-12 flex border-t-4 justify-between">
+  <div class="border-black pt-12 grid gap-12 md:flex border-t-4 justify-between">
     <div class="flex gap-16">
       <div class="">
         <p class="font-bold pb-6">Group name</p>
@@ -200,7 +201,7 @@
         <a href="#" class="block">Link 4</a>
       </div>
     </div>
-    <form class="flex flex-col">
+    <form class="flex flex-col order-first md:order-none">
       <p>Subscribe to our newsletter</p>
       <label class="sr-only" for="_replyto"> Email </label>
       <input class="my-4 border-black border-2" type="email" name="_replyto" id="_replyto" placeholder=""/>
