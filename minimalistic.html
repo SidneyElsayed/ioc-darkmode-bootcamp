@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <!-- SEO  -->
+  <title>My First Tailwind Project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- GOOGLE FONTS -->
+
+  <!-- TAILWIND -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- TAILWIND CUSTOMIZE & EXTEND -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+<!-- TAILWIND CUSTOM CLASSES -->
+<style type="text/tailwindcss">
+  @layer components {
+    .btn-primary {
+      @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700;
+    }
+  }
+</style>
+
+  <!-- CUSTOM CSS LINKS -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="">
+    <nav class="container mx-auto p-2 flex justify-between ">
+        <div>
+            <a href="#" class="p-2 uppercase text-sm">Link 1</a>
+            <a href="#" class="p-2 uppercase text-sm">Link 2</a>
+            <a href="#" class="p-2 uppercase text-sm">Link 3</a>
+        </div>
+        <div>
+            <a href="#" class="p-2 uppercase text-sm">Logo</a> 
+        </div>
+        <div>
+            <a href="#" class="p-2 uppercase text-sm">Link 1</a>
+            <a href="#" class="p-2 uppercase text-sm">Link 2</a>
+            <a href="#" class="p-2 uppercase text-sm">Link 3</a>
+        </div>
+    </nav>
+    <hr class="border-b border-stone-500">
+</header>
+
+
+</body>
+
+</html>
