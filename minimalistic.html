@@ -70,7 +70,7 @@
 </header>
 
 <!-- Our Serivces Section -->
-<section class="p-10">
+<section class="p-10 px-8 sm:px-16">
     <h2 class="uppercase text-2xl">Our services</h2>
     <div class="grid grid-cols-3 gap-6 pt-6">
         <!-- Service 1 -->
@@ -137,12 +137,41 @@
     <div class="pt-8">
       <button class="uppercase border border-darksage text-xs px-6 p-2">contact us</button>
     </div>
-  </section>
+</section>
+
+<!-- Contact Us Section with 50% bg -->
+<section>
+    <form class="bg-no-repeat bg-left bg-[length:50%_auto] grid md:grid-cols-2 gap-6 border-t border-r border-darksage" style="background-image: url('https://plus.unsplash.com/premium_photo-1669863547357-b7d064cedaac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+        <div></div>
+        <div class="border-l border-darksage p-8">
+            <h3 class="col-span-1 pb-12 font-sans font-extrabold uppercase text-5xl">Contact us.</h3>
+            <!-- Name -->
+            <div class="py-6 md:pt-0">
+            <label class="uppercase font-bold border-darksage border-b-2 block" for="_name"> Name </label>
+            <input class="pt-2" type="text" name="_name" id="_name" placeholder="any name will do" />  
+            </div>
+            <!-- Email -->
+            <div class="pb-6">
+            <label class="uppercase font-bold border-darksage border-b-2 block" for="_replyto"> Email </label>
+            <input class="pt-2" type="email" name="_replyto" id="_replyto" placeholder="we prefer something real" />
+            </div>
+            <!-- Message -->
+            <div class="pb-6">
+            <label class="uppercase font-bold block" for="message">Message</label>
+            <textarea class="p-1 block w-full border-darksage border-2" name="message" id="message" placeholder="we love a good compliment :)"></textarea>
+            </div>
+            <!-- Button -->
+            <div class="">
+            <button type="submit" class="bg-darksage text-white uppercase text-xs px-6 p-2"> Submit </button>
+            </div>
+        </div>
+    </form>
+</section>
 
 <!-- Contact Us Section -->
-<section class="p-8 px-8 sm:px-16 border border-darksage">
-    <div class="grid md:grid-cols-2 gap-6">
-        <form class="flex flex-col col-span-1 md:pr-12">
+<section class="border border-darksage">
+    <div class="grid md:grid-cols-2 gap-6 border-r border-darksage">
+        <form class="p-8 px-8 sm:px-16 flex flex-col col-span-1 md:pr-12">
             <h3 class="col-span-1 pb-12 font-sans font-extrabold uppercase text-5xl">Contact us.</h3>
             <!-- Name -->
             <div class="py-6 md:pt-0">
@@ -165,10 +194,48 @@
             </div>
         </form>
         <div class="">
-            <img class="col-span-1 w-full object-cover " src="https://images.unsplash.com/photo-1544377165-d1859f53175f?q=80&w=2101&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            <img class="col-span-1 w-full h-full object-cover " src="https://images.unsplash.com/photo-1544377165-d1859f53175f?q=80&w=2101&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
         </div>
     </div>
-  </section>
+</section>
+
+<!-- Footer -->
+<footer class="uppercase px-8 sm:px-16">
+    <!-- order shifted on the newsletter to bring it above on mobile, but then needed to make the flex only on md, which meant we needed to add grid to the default/small size -->
+    <div class="border-teal pt-8 grid gap-12 justify-center md:flex md:justify-between">
+      <div class="flex gap-16">
+        <div class="">
+          <p class="font-bold pb-4">Group name</p>
+          <a href="#" class="block">Link 1</a>
+          <a href="#" class="block">Link 2</a>
+          <a href="#" class="block">Link 3</a>
+          <a href="#" class="block">Link 4</a>
+        </div>
+        <div class="">
+          <p class="font-bold pb-4">Link groups</p>
+          <a href="#" class="block">Link 1</a>
+          <a href="#" class="block">Link 2</a>
+          <a href="#" class="block">Link 3</a>
+          <a href="#" class="block">Link 4</a>
+        </div>
+        <div class="">
+            <p class="font-bold pb-4">Another group</p>
+            <a href="#" class="block">Link 1</a>
+            <a href="#" class="block">Link 2</a>
+            <a href="#" class="block">Link 3</a>
+            <a href="#" class="block">Link 4</a>
+          </div>
+      </div>
+      <form class="flex flex-col order-first md:order-none">
+        <p>Subscribe to our newsletter</p>
+        <label class="sr-only" for="_replyto"> Email </label>
+        <input class="my-4 border-darksage border bg-inherit" type="email" name="_replyto" id="_replyto" placeholder=""/>
+        <div>
+          <button type="submit" class="border border-darksage uppercase text-xs px-6 p-2"> Subscribe </button>
+        </div>
+      </form>
+    </div>
+</footer>
   
   
 
