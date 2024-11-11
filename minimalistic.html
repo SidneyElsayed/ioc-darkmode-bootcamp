@@ -45,9 +45,9 @@
 <body class="text-darksage">
 
 <!-- Header -->
-<header class="relative min-h-screen">
-    <img class="-z-10 absolute inset-0 w-full h-full object-cover -scale-y-100" src="https://images.unsplash.com/photo-1495476479092-6ece1898a101?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-    <nav class="p-2 flex justify-between">
+<header class="relative min-h-screen flex flex-col">
+    <img class="absolute inset-0 w-full h-full object-cover -scale-y-100" src="https://images.unsplash.com/photo-1495476479092-6ece1898a101?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <nav class="relative p-2 flex justify-between border-b border-sage ">
         <div>
             <a href="#" class="p-4 uppercase text-sm">Link 1</a>
             <a href="#" class="p-4 uppercase text-sm">Link 2</a>
@@ -62,9 +62,8 @@
             <a href="#" class="p-4 uppercase text-sm">Link 3</a>
         </div>
     </nav>
-    <hr class="border-b border-sage">
-    <div class="text-center text-white">
-        <h1 class="text-5xl uppercase">This is a heading</h1>
+    <div class="relative text-center text-white grow flex flex-col justify-center">
+        <h1 class="text-5xl uppercase ">This is a heading</h1>
         <p>This is a subheading</p>
     </div>
 </header>
@@ -72,7 +71,7 @@
 <!-- Our Serivces Section -->
 <section class="p-16 py-24">
     <h2 class="uppercase text-2xl">Our services</h2>
-    <div class="grid grid-cols-3 gap-6 pt-6">
+    <div class="grid sm:grid-cols-3 gap-6 pt-6">
         <!-- Service 1 -->
         <div class="text-center">
             <img class="aspect-square object-cover w-full border-darksage" src="https://images.unsplash.com/photo-1607369816048-311ebd65f2ca?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
@@ -98,9 +97,9 @@
 </section>
 
 <!-- Who we are Section -->
-<section class="min-h-96 grid grid-cols-5 border-y border-darksage" style="background-image: url('https://plus.unsplash.com/premium_photo-1669863547357-b7d064cedaac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
+<section class="min-h-96 grid grid-cols-12 md:grid-cols-5 border-y border-darksage" style="background-image: url('https://plus.unsplash.com/premium_photo-1669863547357-b7d064cedaac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
     <div class="col-span-1"></div>
-    <div class="bg-sandy p-8 py-32 border-x border-darksage col-span-2 content-center">
+    <div class="bg-sandy p-8 py-32 border-x border-darksage col-span-9 md:col-span-2 content-center">
         <h2 class="uppercase text-3xl pb-4">Who we are</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla laborum id voluptates dicta cupiditate perferendis saepe. Repudiandae commodi accusantium dignissimos quisquam at impedit, fugit cumque distinctio quae architecto delectus amet?</p>
         <button class="uppercase text-sm border border-darksage py-1 px-6 mt-4">Find out more</button>
@@ -110,9 +109,9 @@
 <!-- Brand Name Small Text Banner -->
 </section>
     <div class="flex text-center">
-        <div class="online-block border border-t-0 border-r-0 border-darksage py-2 w-full">Brand name</div>
-        <div class="online-block border border-t-0 border-r-0 border-darksage py-2 w-full">Brand name</div>
-        <div class="online-block border border-t-0 border-r-0 border-darksage py-2 w-full">Brand name</div>
+        <div class="hidden sm:block border border-t-0 border-r-0 border-darksage py-2 w-full">Brand name</div>
+        <div class="hidden sm:block border border-t-0 border-r-0 border-darksage py-2 w-full">Brand name</div>
+        <div class="hidden sm:block border border-t-0 border-r-0 border-darksage py-2 w-full">Brand name</div>
         <div class="online-block border border-t-0 border-r-0 border-darksage py-2 w-full">Brand name</div>
         <div class="online-block border border-t-0 border-r-0 border-darksage py-2 w-full">Brand name</div>
         <div class="online-block border border-t-0 border-r-0 border-darksage py-2 w-full">Brand name</div>
@@ -139,38 +138,12 @@
     </div>
 </section>
 
-<!-- Contact Us Section with 50% bg -->
-<section>
-    <form class="bg-no-repeat bg-left bg-[length:50%_auto] grid md:grid-cols-2 gap-6 border-t border-r border-darksage" style="background-image: url('https://plus.unsplash.com/premium_photo-1669863547357-b7d064cedaac?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
-        <div></div>
-        <div class="border-l border-darksage p-8">
-            <h3 class="col-span-1 pb-12 font-sans font-extrabold uppercase text-5xl">Contact us.</h3>
-            <!-- Name -->
-            <div class="py-6 md:pt-0">
-            <label class="uppercase font-bold border-darksage border-b-2 block" for="_name"> Name </label>
-            <input class="pt-2" type="text" name="_name" id="_name" placeholder="any name will do" />  
-            </div>
-            <!-- Email -->
-            <div class="pb-6">
-            <label class="uppercase font-bold border-darksage border-b-2 block" for="_replyto"> Email </label>
-            <input class="pt-2" type="email" name="_replyto" id="_replyto" placeholder="we prefer something real" />
-            </div>
-            <!-- Message -->
-            <div class="pb-6">
-            <label class="uppercase font-bold block" for="message">Message</label>
-            <textarea class="p-1 block w-full border-darksage border-2" name="message" id="message" placeholder="we love a good compliment :)"></textarea>
-            </div>
-            <!-- Button -->
-            <div class="">
-            <button type="submit" class="bg-darksage text-white uppercase text-xs px-6 p-2"> Submit </button>
-            </div>
-        </div>
-    </form>
-</section>
-
 <!-- Contact Us Section -->
 <section class="border border-darksage">
-    <div class="grid md:grid-cols-2 gap-6 border-r border-darksage">
+    <div class="grid md:grid-cols-2 divide-x divide-darksage">
+        <div class="relative">
+            <img class="w-full h-full object-cover " src="https://images.unsplash.com/photo-1544377165-d1859f53175f?q=80&w=2101&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
         <form class="p-8 px-8 sm:px-16 flex flex-col col-span-1 md:pr-12">
             <h3 class="col-span-1 pb-12 font-sans font-extrabold uppercase text-5xl">Contact us.</h3>
             <!-- Name -->
@@ -193,9 +166,6 @@
             <button type="submit" class="bg-darksage text-white uppercase text-xs px-6 p-2"> Submit </button>
             </div>
         </form>
-        <div class="">
-            <img class="col-span-1 w-full h-full object-cover " src="https://images.unsplash.com/photo-1544377165-d1859f53175f?q=80&w=2101&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-        </div>
     </div>
 </section>
 
